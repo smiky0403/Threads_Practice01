@@ -23,7 +23,7 @@ int main(){
     std::thread t2 = std::thread(Vehicle(a2));//copy initialization
     std::thread t3{Vehicle(a3)}; //uniform initialization with braces
 
-    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::this_thread::sleep_for(std::chrono::seconds(2));
     std::cout << "Work in Main Finished"<< std::endl;
 
     //t0.join();  //can't compile
