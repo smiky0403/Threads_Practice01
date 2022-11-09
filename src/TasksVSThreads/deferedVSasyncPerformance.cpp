@@ -27,6 +27,7 @@ int main(){
      int nThreads = 4;
 
      for(int i = 0; i < nThreads; i++){
+        
         futures.emplace_back(std::async(std::launch::async, workerFunction, nloops)); //compare
         //futures.emplace_back(std::async(std::launch::deferred, workerFunction, nloops)); //compare
      }
